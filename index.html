@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Vide</title>
+</head>
+<body>
+
+<div id="animation"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+<script>
+    var animation = lottie.loadAnimation({
+        container: document.getElementById('animation'), // Élément où afficher l’animation
+        renderer: 'svg', // Peut être 'canvas' ou 'html'
+        loop: true, // Animation en boucle
+        autoplay: true, // Démarrage automatique
+        path: 'animation.json' // Chemin vers ton fichier exporté
+    });
+</script>
+
+</body>
+</html>
