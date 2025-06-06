@@ -7,18 +7,26 @@
 </head>
 <body>
 
-<div id="animation" style="width: 100%; height: 500px;"></div>
+<button id="stopButton">Stop Animation</button>
+<div id="animation"></div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
 <script>
-var animation = lottie.loadAnimation({
-    container: document.getElementById('animation'), // Target HTML element
-    renderer: 'svg', // Can also be 'canvas' or 'html'
-    loop: true, // Animation loops infinitely
-    autoplay: true, // Starts automatically
-    path: 'Composition1.json' // Path to the exported JSON file
-});
+    // Load the animation
+    var animation = lottie.loadAnimation({
+        container: document.getElementById('animation'), // Target element
+        renderer: 'canvas', // Can be 'svg' or 'html'
+        loop: true, // Animation loops infinitely
+        autoplay: true, // Starts automatically
+        path: 'Composition1.json' // Path to the exported JSON file
+    });
 
+    // Function to stop the animation when button is clicked
+    document.getElementById('stopButton').addEventListener('click', function() {
+        animation.stop(); // Stops the animation
+    });
 </script>
+
 
 </body>
 </html>
