@@ -10,13 +10,14 @@
 <div id="animation" style="width: 100%; height: 500px;"></div>
 
 <script>
-    var animation = lottie.loadAnimation({
-        container: document.getElementById('animation'),
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        path: 'https://raw.githubusercontent.com/clubentrepreneurs/lottietest/main/Composition1.json'
-    });
+var animation = lottie.loadAnimation({
+    container: document.getElementById('animation'), // Target HTML element
+    renderer: 'svg', // Can also be 'canvas' or 'html'
+    loop: true, // Animation loops infinitely
+    autoplay: true, // Starts automatically
+    path: 'Composition1.json' // Path to the exported JSON file
+});
+
 </script>
 
 </body>
