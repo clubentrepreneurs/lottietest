@@ -7,19 +7,17 @@
 </head>
 <body>
 
-   <div id="animation"></div>
+<div id="animation" style="width: 100%; height: 500px;"></div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
 <script>
     var animation = lottie.loadAnimation({
-        container: document.getElementById('animation'), // Élément où afficher l’animation
-        renderer: 'svg', // Peut être 'canvas' ou 'html'
-        loop: true, // Animation en boucle
-        autoplay: true, // Démarrage automatique
-        path: 'Composition1.json' // Chemin vers ton fichier exporté
+        container: document.getElementById('animation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'https://raw.githubusercontent.com/clubentrepreneurs/lottietest/main/Composition1.json'
     });
 </script>
-
 
 </body>
 </html>
