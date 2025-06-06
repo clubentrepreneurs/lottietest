@@ -7,26 +7,19 @@
 </head>
 <body>
 
-    <div id="animation"></div>
+   <div id="animation"></div>
 
-    <script>
-        // Charger l’animation Lottie
-        var animation = lottie.loadAnimation({
-            container: document.getElementById('animation'), // Élément où afficher l’animation
-            renderer: 'canvas', // Essaye 'svg' ou 'html' si besoin
-            loop: true, // Animation en boucle
-            autoplay: true, // Démarrage automatique
-            path: 'Composition1.json' // Chemin vers ton fichier JSON
-        });
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+<script>
+    var animation = lottie.loadAnimation({
+        container: document.getElementById('animation'), // Élément où afficher l’animation
+        renderer: 'svg', // Peut être 'canvas' ou 'html'
+        loop: true, // Animation en boucle
+        autoplay: true, // Démarrage automatique
+        path: 'animation.json' // Chemin vers ton fichier exporté
+    });
+</script>
 
-        // Vérifier que l’animation est bien chargée avant de la jouer
-        animation.addEventListener('DOMLoaded', function() {
-            console.log("Animation chargée !");
-            animation.play(); // Démarre l'animation après le chargement
-        });
-
-        // Vérifier la console du navigateur pour détecter d'éventuelles erreurs
-    </script>
 
 </body>
 </html>
